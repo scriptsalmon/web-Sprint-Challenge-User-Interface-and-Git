@@ -71,6 +71,20 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 3%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
