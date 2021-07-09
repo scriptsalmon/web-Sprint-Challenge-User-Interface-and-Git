@@ -66,14 +66,14 @@ p {
     line-height: 1.4;
 }
 
-.container {
+.container{
     width: 800px;
     margin: 0 auto;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
     padding: 3%;
 }
@@ -85,70 +85,59 @@ header nav {
     width: 100%;
 }
 
-header nav a {
-    color: black;
-    font-style: bold;
-    text-decoration: none;
-}
-
 header .header-img {
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-style: bold;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.top-content {
+    padding: 3% 2%;
+    padding-bottom: 4%;
+    border-bottom: dashed 1.5px black;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 800px;
+}
+
+.middle-content .row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 380px;
+    border-bottom: dashed 1.5px black;
+    padding: 2% 1%;
+    margin: 1%;
+}
+
+.middle-content .row img {
+    padding-bottom: 4%;
+    align-self: flex-start;
+}
+
+.middle-content button {
+    font-size: 1rem;
+    padding: 2% 6%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    border: solid 2px black;
+    border-radius: 10px;
 }
 
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+    padding: 5% 2%;
 }
 
 footer {
